@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Righteous&display=swap");
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #E9B6C1;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  background-color: #152842;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+#publish {
+  background-color: #152842;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+#writeNew {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #152842;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#writeNew ion-icon {
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.delete {
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+.noteCard {
+  background-color: #fff;
+  width: 95%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#writeNoteArea {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */

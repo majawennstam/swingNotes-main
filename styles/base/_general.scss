@@ -1,0 +1,14 @@
+@use '../abstract/colors' as C;
+@use '../abstract/fonts' as F;
+
+    
+body {
+   min-height: 100vh;
+   height: 100%;
+   background-color: C.$main-light;
+   
+}
+
+.hidden{
+    display: none;
+}

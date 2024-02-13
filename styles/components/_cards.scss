@@ -1,0 +1,20 @@
+@use "../abstract/colors" as C;
+@use "../abstract/fonts" as F;  
+
+.noteCard{
+    background-color: C.$btn-text-color;
+    width: 95%;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+    #writeNoteArea{
+        width: 100%;
+    }
+
