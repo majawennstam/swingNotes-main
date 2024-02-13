@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swing notes</title>
-    <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    defer
- ></script>
- <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    defer
- ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <section class="chooseUser" id="chooseUser">
         <h3>Välkommen till Swingnotes!</h3>
@@ -26,22 +20,23 @@
     </section>
     <section class="hidden" id="noteCardList">
         <div class="noteCardHolder" id="noteCardHolder">
-    
-    </div>
-    <button class="hidden" id="writeNew"><ion-icon name="pencil-outline"></ion-icon></button>
+
+        </div>
+        <button class="hidden" id="writeNew"><ion-icon name="pencil-outline"></ion-icon></button>
 
     </section>
     <section class="hidden newNote" id="newNote">
         <input type="text" id="title" class="titlus" placeholder="Titel">
-        
+
         <textarea name="notetext" id="writeNoteArea" cols="30" rows="10"></textarea>
 
-    
-    <button class="button" id="publishNew">Spara</button>
-    <button class="button" id="publishUpdate">Publicera</button>
 
-</section>
-    
+        <button class="button" id="publishNew">Spara</button>
+        <button class="button" id="publishUpdate">Publicera</button>
+
+    </section>
+
     <script type="module" src="/src/main.ts"></script>
 </body>
+
 </html>

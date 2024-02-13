@@ -8,34 +8,34 @@ let username = ""
 
 export function eventListButtons() {
 
-    
+
     htmlEL.usernameBtn.addEventListener('click', () => {
         username = htmlEL.inputUsername.value
 
-        
+
         if (username) {
-            
+
             userNotes = api.getNotes(username)
-            if(!userNotes){
+            if (!userNotes) {
                 func.writeNew()
-                
-            }else{
+
+            } else {
                 func.seeNotes()
             }
 
         } else {
             console.log('test')
-            
+
 
         }
-        
+
 
 
         console.log(userNotes)
     })
 
 
-} 
+}
 
 
 
@@ -45,38 +45,30 @@ export function eventListButtons() {
 htmlEL.writeNew.addEventListener('click', () => {
 
     htmlEL.noteTextArea.value = ''
-    func.writeNew()  
+    func.writeNew()
 
-    
+
 })
 
 
-// htmlEL.publishUpdate.addEventListener('click', () => {
-    
+htmlEL.publishUpdate.addEventListener('click', () => {
 
-    
-//     // htmlEL.addNote.classList.add('hidden')
-
-//     // htmlEL.newNote.classList.add('hidden')
-//     // htmlEL.noteCardList.classList.remove('hidden');
-//     // notePreview.classList.add('hidden')
-//     // console.log(newNoteElement);
-// })
+})
 
 htmlEL.addNote.addEventListener('click', () => {
-if(htmlEL.title.value.length<5){
-    alert('Title måste vara minst 5 bokstäver!')
-}else{
-    const Note = {
-        username: username.toString(),
-        title: htmlEL.title.value.toString(),
-         note: htmlEL.noteTextArea.value.toString()
-         
+    if (htmlEL.title.value.length < 5) {
+        alert('Title måste vara minst 5 bokstäver!')
+    } else {
+        const Note = {
+            username: username.toString(),
+            title: htmlEL.title.value.toString(),
+            note: htmlEL.noteTextArea.value.toString()
 
-         }
-    const newNoteElement = JSON.stringify(Note)
 
-    api.createNote(newNoteElement)
-}
-    
+        }
+        const newNoteElement = JSON.stringify(Note)
+
+        api.createNote(newNoteElement)
+    }
+
 })
